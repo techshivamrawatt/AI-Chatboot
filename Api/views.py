@@ -44,12 +44,6 @@ class AI_ChatbootViewSet(viewsets.ViewSet):
             # 🔑 Gemini API key
             genai.configure(api_key="Enter your api key") #Hide my api 
 
-            models = genai.list_models()
-
-            for m in models:
-                print(m.name)
-
-        
             model = genai.GenerativeModel("gemini-2.5-flash")
 
             # AI response
